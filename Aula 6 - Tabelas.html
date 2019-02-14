@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-bt">
+<head>
+	<title>Tabelas</title>
+	<meta charset="utf-8">
+
+<style>
+
+table,th,td{
+	border: 1px solid black;
+}
+
+.nome{
+	background-color: red;
+}
+
+.email{
+	background-color: yellow;
+}
+
+.telefone{
+	background-color: blue;
+}
+
+.cargo{
+	background-color: green;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Tabelas</h2>
+
+<table>
+	<caption>Cadastro de Clientes</caption>
+
+	<colgroup>
+		<col class="nome">
+		<col class="email">
+		<col class="telefone">
+		<col class="cargo">
+	</colgroup>
+
+	<thead> <!-- AGRUPANDO POR SEÇÕES -->
+	   <tr>
+	   		<th>Nome:</th>
+			<th>Email:</th>
+			<th>Telefone</th>
+			<th>Cargo</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+	   		<td>Alexandre</td>
+			<td>xandemnf@gmail.com</td>
+			<td>(61) 9 9802-0868</td>
+			<td rowspan="2">Desenvolvedor</td>
+		</tr>
+		<tr>
+	   		<td>Fulano</td>
+			<td>Fulano@gmail.com</td>
+			<td>(61) 9 9999-0000</td>
+		</tr>
+	</tbody>
+
+	<tfoot>
+		<tr>
+			<td colspan="4">Total:</td>
+		</tr>
+	</tfoot>
+
+</table>
+
+</body>
+</html>
